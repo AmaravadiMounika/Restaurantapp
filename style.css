@@ -1,0 +1,552 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+section{
+    width:100%;
+    height:100vh;
+}
+section nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    position:fixed;
+    background: white;
+    right:0;
+    left:0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    z-index:1000;
+}
+section nav .logo img{
+    width:100px;
+    margin: 8px 0;
+    cursor: pointer;
+}
+section nav ul{
+    list-style: none;
+}
+section nav ul li{
+    display:inline-block;
+    margin:2px 17px;
+
+}
+section nav ul li a{
+    text-align: none;
+    color: black;
+    font-weight: 500;
+    font-size: 21px;
+    text-decoration: none;
+    transition: 0.1s;
+}
+section nav ul li a:hover{
+    transition:0.2s;
+    color:coral;
+    text-decoration: underline;
+    text-decoration-color: black;
+    /* content: ''; */
+}
+section nav .icon i{
+    font-size: 20px;
+    color:black;
+    transition:0.2s;
+    margin:0 10px;
+    cursor: pointer;
+}
+section nav .icon i:hover{
+    color:coral;
+}
+section .main{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    position:relative;
+    top:100px;
+}
+section .main .main_text h1{
+    font-size: 50px;
+    font-weight: 540;
+    line-height: 50px;
+    position: relative;
+    top:-90px;
+    left:20px;
+}
+section .main .main_text h1 span{
+    color:coral;
+    font-family: mv boli;
+    font-weight: 560;
+}
+section .main .main_img{
+    width:700px;
+    position: relative;
+    left:70px;
+    
+}
+section p{
+    width:600px;
+    text-align:justify;
+    position: relative;
+    bottom:180px;
+    left:145px;
+    line-height: 23px;
+    font-size: 18px;
+
+}
+section .main_btn{
+    background-color:gold;
+    position:relative;
+    left:140px;
+    bottom:80px;
+    width:125px;
+    cursor: pointer;
+    text-align: center;
+    padding:10px 10px;
+}
+section .main_btn a{
+    color:black;
+    font-weight: 500;
+    text-decoration: none;
+}
+section .main_btn i{
+    color:white;
+    transition:0.2s;
+}
+section .main_btn:hover i{
+    transform:translateX(7px);
+}
+#About{
+    width:100%;
+    height:80vh;
+    padding:70px 0;
+}
+#About .about_main{
+    display:flex;
+    justify-content: space-around;
+    left:30px;
+    align-items: center;
+}
+#About .about_main .about_text{
+    position:relative;
+    top:10px;
+
+}
+#About .about_main .about_image img{
+    width:820px;
+}
+#About .about_main .about_text h1 span{
+    color:coral;
+    font-family: mv boli;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    font-size: 34px;
+}
+#About .about_main .about_text h3{
+    font-size: 30px;
+    margin:0px 0px 40px 0px;
+}
+#About .about_main .about_text p{
+    font-size: 18px;
+    line-height: 23px;
+}
+#About .about_btn{
+    background-color: gold;
+    padding:10px 20px;
+    color:black;
+    text-decoration: none;
+    cursor: pointer;
+    position:relative;
+    left:54%;
+    bottom:30%;
+
+}
+.menu{
+    width:100%;
+    padding:90px 0;
+    position:relative;
+    top:60px;
+
+}
+.menu h1{
+    font-size:45px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    
+}
+.menu h1 span{
+    color: coral;
+    font-family: mv boli;
+    margin-left: 13px;
+    font-weight: 450;
+}
+.menu h1 span::after{
+    /* content:'';  */
+    background: gold;
+    width:100%;
+    height:2px;
+    /* display:block;
+    position:relative;
+    bottom:15px; */   
+}
+.menu .Menu_box{
+    width:100%;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap:17px;
+}
+.menu .Menu_box .Menu_card{
+    width:310px;
+    height:470px;
+    box-shadow:0 0 10px black;
+    margin: 15px 10px;
+    
+}
+.menu .Menu_box .Menu_card .menu_img{
+    width:292px;
+    height:220px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.menu .Menu_box .Menu_card .menu_img img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+.menu .Menu_box .Menu_card .menu_img:hover img{
+    transform: scale(1.1);
+
+}
+.menu .Menu_box .Menu_card .small_card{
+    position:relative;
+    float: right;
+    top:-220px;
+    right: -5px;
+    width: 45px;
+    height: 45px;
+
+}
+.menu .Menu_box .Menu_card .small_card i{
+    font-size: 23px;
+    text-shadow: 0 0 5px black;
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+.menu .Menu_box .Menu_card .small_card i:hover{
+    color:coral;
+}
+.menu .Menu_box .Menu_card .menu_info h2{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:10px 65px; 
+    color: coral;
+    font-size: 25px;
+}
+.menu .Menu_box .Menu_card .menu_info p{
+    text-align: center;
+    margin: 7px;
+    line-height: 20px; 
+    
+}
+.menu .Menu_box .Menu_card .menu_info h3{
+    text-align: center;
+    margin-top: 15px;
+    
+}
+.menu .Menu_box .Menu_card .menu_info .menu_icon{
+    color: coral;
+    text-align: center;
+    margin-top: 7px;
+}
+.menu .Menu_box .Menu_card .menu_info .order_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 87px;
+    padding: 6px 7px;
+    width:40%;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.menu .Menu_box .Menu_card .menu_info .order_btn:hover{
+    background-color: coral;
+    color: black;
+}
+.gallery{
+    width:100%;
+    padding: 65px 0px;
+}
+.gallery h1{
+    font-size:45px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    
+}
+.gallery h1 span{
+    color: coral;
+    font-family: mv boli;
+    margin-left: 13px;
+    font-weight: 450;
+}
+.gallery h1 span::after{
+    /* content:'';  */
+    background: gold;
+    width:100%;
+    height:2px;
+    /* display:block;
+    position:relative;
+    bottom:15px; */   
+}
+.gallery .gallery_box{
+    width:95%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-gap:10px;
+
+}
+.gallery .gallery_box .gallery_img{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+.gallery .gallery_box .gallery_img img{
+    width:100%;
+    transition: 0.3s;
+}
+.gallery .gallery_box .gallery_img:hover img{
+    opacity:0.4;
+}
+.gallery .gallery_box .gallery_img h3{
+    position:absolute;
+    font-size: 30px;
+    color:coral;
+    margin:0 50px 130px 50px;
+    transition: 0.3s;
+    z-index:5;
+    opacity:0;
+    transform: translateY(-45px);
+}
+.gallery .gallery_box .gallery_img:hover h3{
+    opacity:1;
+    transform: translateY(0);
+}
+.gallery .gallery_box .gallery_img p{
+    position:absolute;
+    text-align: center;
+    color:white;
+    opacity: 0;
+    width:400px;
+    margin-top: 30px;
+    transition:0.3s;
+
+}
+.gallery .gallery_box .gallery_img:hover p{
+    opacity:1;
+}
+.gallery .gallery_box .gallery_img .order_btn{
+    position:absolute;
+    color: white;
+    background-color: coral;
+    opacity:0;
+    text-decoration: none;
+    padding:7px 20px;
+    margin-top: 170px;
+    transform: translateY(45px);
+    transition: 0.3s;
+    border-radius: 4px;
+
+}
+.gallery .gallery_box .gallery_img:hover .order_btn{
+    opacity:1;
+    transform: translateY(0);
+}
+.review{
+    width:100%;
+    padding:60px 40px 20px 40px;
+}
+.review h1{
+    font-size:45px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 20px; */
+    
+}
+.review h1 span{
+    color: coral;
+    font-family: mv boli;
+    margin-left: 13px;
+    font-weight: 450;
+}
+.review h1 span::after{
+    /* content:'';  */
+    background: gold;
+    width:100%;
+    height:2px;
+    /* display:block;
+    position:relative;
+    bottom:15px; */   
+}
+.review .review_box{
+    width:100%;
+    margin:70px auto;
+    display:flex;
+}
+.review .review_box .review_card{
+    width:350px;
+    height:475px;
+    box-shadow: 0 2px 10px black;
+    margin: 15px 10px;
+    border-radius: 8px;
+    padding:8px 20px;
+    background-color:rgb(225, 221, 221);
+}
+.review .review_box .review_card .review_img{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:10px;
+
+}
+.review .review_box .review_card .review_img img{
+    width:150px;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+.review .review_box .review_card h3{
+    margin: 15px;
+    text-align: center;
+    color: coral;
+    font-size: 29px;
+}
+.review .review_box .review_card .review_icon{
+    margin-top: 10px;
+    text-align: center;
+}
+.review .review_box .review_card .symbols{
+    margin-top:6px;
+    text-align: center;
+}
+.review .review_box .review_card .symbols i{
+    margin:0 4px;
+    cursor: pointer;
+}
+.review .review_box .review_card p{
+    margin-top: 10px;
+    line-height: 18px;
+}
+.order{
+    width:100%;
+    height:100vh;
+    background-image: url("bg1.jpg");
+    background-position: center;
+    background-size: cover;
+    padding:70px 0px;
+}
+.order h1{
+    text-align: center;
+    font-size:45px;
+
+}
+.order h1 span{
+    color:coral;
+    font-family: mv boli;
+    font-weight: 450;
+    margin-right: 15px;
+}
+.order .order_imp{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+}
+.order .order_imp .order_img img{
+    width:550px;
+    
+}
+.order .order_imp form{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 10px;
+}
+.order .order_imp form .input p{
+    line-height: 24px;
+    font-size: 19px;
+    margin-bottom: 5px;
+    
+}
+.order .order_imp form .input{
+    margin:10px;   
+}
+.order .order_imp form .input input{
+    width:200px;
+    height:26px;
+    text-align: center;
+    font-size: 17px;
+    border: 2px solid white;
+    background-color: rgb(188, 186, 186);
+    border-radius: 4px;
+}
+.order .order_imp form .input input:focus{
+    border:2px solid coral;
+}
+.order .order_imp form .order_btn{
+    padding:7px 7px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    width:40%;
+    background-color: black;
+    color:white;
+    margin-left:170px;
+    margin-top: 25px;
+    
+}
+.order .order_imp form .order_btn:hover{
+    color: black;
+    background-color: coral;
+    border: 2px solid white;
+}
+footer{
+    width:100%;
+    height:32vh;
+    background-color: rgb(225, 221, 221);
+    padding:30px 0 0 20px;
+    margin-top: 20px;
+}
+footer .footer_main{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+footer .footer_main .footer_tags{
+    text-align: center;
+}
+footer .footer_main .footer_tags h2{
+    margin-bottom: 15px;
+}
+footer .footer_main .footer_tags p{
+    line-height: 24px;
+    font-size: 19px;
+}
+footer .footer_main .footer_tags i{
+    margin:0 5px;
+    cursor: pointer;
+
+}
+
+
